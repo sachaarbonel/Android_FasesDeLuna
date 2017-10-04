@@ -1,4 +1,4 @@
-package com.journaldev.navigationdrawer;
+package com.journaldev.navigationdrawer.activities;
 
 
 import android.support.v4.app.Fragment;
@@ -12,6 +12,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.journaldev.navigationdrawer.R;
+import com.journaldev.navigationdrawer.adapters.DrawerItemCustomAdapter;
+import com.journaldev.navigationdrawer.fragments.GridFragment;
+import com.journaldev.navigationdrawer.fragments.ListFragment;
+import com.journaldev.navigationdrawer.fragments.WikiFragment;
+import com.journaldev.navigationdrawer.models.DataModel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
+        if (savedInstanceState == null) {
+            selectItem(0);
+        }
         setupDrawerToggle();
 
 

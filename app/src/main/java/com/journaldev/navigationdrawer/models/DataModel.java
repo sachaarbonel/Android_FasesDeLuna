@@ -1,7 +1,7 @@
-package com.journaldev.navigationdrawer;
+package com.journaldev.navigationdrawer.models;
 
 /**
- * Created by anupamchugh on 10/12/15.
+ * Created by sacha on 04/10/2017.
  */
 public class DataModel {
 

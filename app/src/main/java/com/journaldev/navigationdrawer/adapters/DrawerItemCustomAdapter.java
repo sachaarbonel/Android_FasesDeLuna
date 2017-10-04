@@ -1,4 +1,4 @@
-package com.journaldev.navigationdrawer;
+package com.journaldev.navigationdrawer.adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,8 +9,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.journaldev.navigationdrawer.models.DataModel;
+import com.journaldev.navigationdrawer.R;
+
 /**
- * Created by anupamchugh on 10/12/15.
+ * Created by sacha on 04/10/2017.
  */
 public class DrawerItemCustomAdapter extends ArrayAdapter<DataModel> {
 
