@@ -5,6 +5,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import com.journaldev.navigationdrawer.R;
 
@@ -13,7 +15,7 @@ import com.journaldev.navigationdrawer.R;
  */
 public class WikiFragment extends Fragment {
 
-    public WikiFragment() {
+    /*public WikiFragment() {
     }
 
     @Override
@@ -23,5 +25,24 @@ public class WikiFragment extends Fragment {
 
         return rootView;
     }
+*/
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        // Como el layout de este fragmento es muy sencillo lo crearemos por c�digo.
+        WebView wv = new WebView(getActivity());
+        wv.loadUrl("https://es.m.wikipedia.org/wiki/Fase_lunar");
+
+        // Este c�digo hace que los links se carguen en el mismo webview y no
+        // se abran en el browser nativo
+        wv.setWebViewClient(new WebViewClient(){
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+                return true;
+            }
+        });
+        return wv;
+    }
 }

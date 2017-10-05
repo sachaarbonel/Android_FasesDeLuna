@@ -5,7 +5,7 @@
     android:orientation="vertical">
 
 
-    <TextView
+  <!--  <TextView
         android:id="@+id/label"
         android:layout_alignParentTop="true"
         android:layout_marginTop="100dp"
@@ -25,7 +25,8 @@
         android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:text="Edit fragment_grid.xml to change the appearance"
-        android:id="@+id/textView2" />
+        android:id="@+id/textView2" />-->
+    <GridView android:layout_height="match_parent" android:layout_width="match_parent" android:numColumns="2" android:id="@+id/gridView1"/>
 
 
 

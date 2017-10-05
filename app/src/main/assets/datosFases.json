@@ -1,0 +1,51 @@
+{"faseLunar":[
+  {
+    "fase": "Luna nueva",
+    "alias": "Novilunio",
+    "descripcion": "Luna Nueva o Novilunio, también llamada \"Luna Nueva Astronómica\" o \"Luna Negra\", corresponde a la Luna Nueva Verdadera; esta fase de la Luna normalmente es imposible verla a simple vista ya que se encuentra oculta tras el resplandor solar, sólo es posible observarla cuando ocurre un eclipse total de Sol, los cuales acontecen durante esta fase lunar sólo cuando las condiciones dadas son las adecuadas.",
+    "id": "luna_nueva"
+  },
+  {
+    "fase": "Creciente iluminante",
+    "alias": "",
+    "descripcion": "Luna Creciente, también llamada Nueva Visible, corresponde a la Luna Nueva Tradicional y es la primera aparición de la Luna en el cielo, 18 o 30 horas después de haberse producido la posición de \"Luna Nueva Astronómica\". Esta fase de la Luna se podrá ver en el cielo hacia el oeste, una vez ya ocultado el Sol, justo por encima del crepúsculo aún restante. Tiene forma de pequeña guadaña o cuerno. Esta fase de la Luna es la que se utiliza para dar comienzo al primer día de cada mes lunar.",
+    "id": "creciente_iluminante"
+  },
+  {
+    "fase": "Cuarto creciente",
+    "alias": "Primer cuarto",
+    "descripcion": "Cuarto Creciente. Tiene su salida en el horizonte por el este a las 12 del mediodía (hora astronómica local, no necesariamente hora oficial), su cenit se produce a las 6 de la tarde y su ocaso a las 12 de la medianoche. La parte luminosa de la Luna durante esta fase tiene la forma de un círculo partido justo a la mitad (semi-círculo).",
+    "id": "cuarto_creciente"
+  },
+  {
+    "fase": "Gibosa iluminante",
+    "alias": "",
+    "descripcion": "Luna Gibosa Creciente, una vez ya pasada la fase del Cuarto Creciente, la Luna va tomando progresivamente día tras día, una forma convexa por ambos lados en su parte luminosa, perdiendo ese lado recto que poseía durante la fase Cuarto Creciente.",
+    "id": "gibosa_iluminante"
+  },
+  {
+    "fase": "Luna llena",
+    "alias": "Plenilunio",
+    "descripcion": "Luna Llena o Plenilunio, es cuando la concavidad de la parte luminosa de la Luna se logra completar en su totalidad hasta formar un círculo. Su salida en el horizonte es aproximadamente a las 6:00 p.m., el cenit lo alcanza aproximadamente durante la medianoche y se oculta cerca de las 6:00 de la mañana. La Luna Llena viene a marcar justo lo que es la mitad del mes lunar (14 días, 18 horas, 21 minutos 36 segundos).",
+    "id": "luna_llena"
+  },
+  {
+    "fase": "Gibosa menguante",
+    "alias": "",
+    "descripcion": "Luna Gibosa Menguante, pasada ya la fase correspondiente a la Luna Llena, la parte luminosa de la Luna comenzará a menguar con el correr de los días, tomando así de nuevo —igual como en la Luna Gibosa creciente— una apariencia de una Luna-Cóncava (gibosa) esta vez en su fase decreciente.",
+    "id": "gibosa_menguante"
+  },
+  {
+    "fase": "Cuarto menguante",
+    "alias": "Último cuarto",
+    "descripcion": "Cuarto Menguante, exactamente igual que el Cuarto Creciente, pero en sentido contrario. Además, tiene su salida en el horizonte a las 12 de la medianoche, alcanza el cenit en el cielo a las 6 de la mañana y su ocaso se produce a las 12 del mediodía, es decir, esta fase lunar corresponde al periodo de días durante el cual es posible observar a la Luna en el cielo durante las horas de la mañana.",
+    "id": "cuarto_menguante"
+  },
+  {
+    "fase": "Creciente menguante",
+    "alias": "",
+    "descripcion": "Luna Menguante, conocida también como \"Creciente Menguante\" o \"Luna Vieja\" (este último término poco conocido) ya que es idéntica a la Luna Nueva Visible, pero en sentido opuesto. La Luna Menguante sólo es posible verla de madrugada, hacia el Este, justo por encima de la Aurora o Alba y antes de que salga el Sol. Tiene apariencia de pequeña guadaña.",
+    "id": "creciente_menguante"
+  }
+]
+}

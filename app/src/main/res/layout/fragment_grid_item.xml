@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView android:layout_height="90dp" android:layout_width="match_parent" android:id="@+id/fase_lunar_imagen"/>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/fase_lunar_imagen"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/fase_lunar_nombre"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/fase_lunar_nombre_alt"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
