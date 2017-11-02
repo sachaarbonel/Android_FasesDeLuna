@@ -52,8 +52,10 @@ public class GridFragment extends Fragment {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View child, int position, long id) {
+                //Problem here with detalleFase
                 Intent newActivity = new Intent(getActivity(), DetalleFaseActivity.class);
-                newActivity.putExtra("detalleFase", mList.get(position).getDescripcion());
+                newActivity.putExtra("detalleFase", "hola");
+                //newActivity.putExtra("detalleFase", mList.get(position).getDescripcion());
                 startActivity(newActivity);
             }
         });

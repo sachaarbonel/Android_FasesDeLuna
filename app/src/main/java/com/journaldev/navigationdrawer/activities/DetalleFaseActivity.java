@@ -13,16 +13,29 @@ import com.journaldev.navigationdrawer.R;
 public class DetalleFaseActivity extends Activity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_detalle);
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode,resultCode,data);
 
         Intent callingIntent = getIntent();
-        Bundle extras = callingIntent.getExtras();
-        String descripcion = extras.getString("detalleFase");
-
+        setContentView(R.layout.fragment_detalle);
         TextView detalleTv = (TextView) findViewById(R.id.fase_lunar_descripcion);
 
-        detalleTv.setText(descripcion);
+        if(requestCode==1){
+            if(resultCode==RESULT_OK){
+
+                String descripcion = (String)data.getStringExtra("detalleFase");
+                detalleTv.setText("hola");
+
+                /*Bundle extras = callingIntent.getExtras();
+                String descripcion = extras.getString("detalleFase");
+                TextView detalleTv = (TextView) findViewById(R.id.fase_lunar_descripcion);
+
+
+                //detalleTv.setText("hola");
+                detalleTv.setText(descripcion);*/
+            }
+        }
+
     }
+
 }

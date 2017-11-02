@@ -63,7 +63,7 @@ public class FasesLunaresAdapter extends BaseAdapter {
         {
             // Si estamos en modo lista, cargamos un layout para cada item
             if (adapterMode == ADAPTER_MODE_LISTVIEW) {
-                convertView = mInflater.inflate(R.layout.fragment_item, null);
+                convertView = mInflater.inflate(R.layout.fragment_list_item, null);
             }
             // Si estamos en modo grid, cargamos otro layout diferente
             else if(adapterMode == ADAPTER_MODE_GRIDVIEW) {

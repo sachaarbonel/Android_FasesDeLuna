@@ -49,13 +49,21 @@ public class ListFragment extends Fragment {
         View mFragment = inflater.inflate(R.layout.fragment_list, null);
         ListView mLista = (ListView) mFragment.findViewById(R.id.listView1);
         mLista.setAdapter(getFasesLunaresAdapter());
+
         mLista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View child, int position, long id) {
                 Intent newActivity = new Intent(getActivity(), DetalleFaseActivity.class);
-                newActivity.putExtra("detalleFase", mList.get(position).getDescripcion());
-                startActivity(newActivity);
+
+                // newActivity.putExtra("detalleFase", mList.get(position).getDescripcion());
+                //startActivity(newActivity);
+                /*newActivity.putExtra("detalleFase",  mList.get(position).getDescripcion());
+                getActivity().setResult(DetalleFaseActivity.RESULT_OK,newActivity);
+                getActivity().finish();*/
+
+                newActivity.putExtra("detalleFase","hola");
+                startActivityForResult(newActivity, 1);
             }
         });
 

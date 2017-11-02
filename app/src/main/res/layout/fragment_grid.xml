@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -26,7 +27,11 @@
         android:gravity="center_horizontal"
         android:text="Edit fragment_grid.xml to change the appearance"
         android:id="@+id/textView2" />-->
-    <GridView android:layout_height="match_parent" android:layout_width="match_parent" android:numColumns="2" android:id="@+id/gridView1"/>
+    <GridView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:numColumns="2"
+        android:id="@+id/gridView1"/>
 
 
 
